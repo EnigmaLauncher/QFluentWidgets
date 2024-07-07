@@ -1,17 +1,23 @@
-# 说明
+# QFluentWidgets
 
-原作是 python 库，传送门[GitHub - zhiyiYo/PyQt-Fluent-Widgets: A fluent design widgets library based on PyQt5](https://github.com/zhiyiYo/PyQt-Fluent-Widgets)
+Implementation of the Fluent UI component library, but for Qt C++
 
-当前分支`444f2fe980ac472449be20fe24a185d251942dc3`
+- [*What Fluent UI?*](https://developer.microsoft.com/en-us/fluentui)
 
-未完待续...
+## General
+Based on the repository [programClown/QFluentWidgets](https://github.com/programClown/QFluentWidgets) under the GPLv3 license.
+Current: `444f2fe980ac472449be20fe24a185d251942dc3`
 
-# 截图
+## Install
 
-1. gallery
+Soon...
 
-![](screenshot/gallay-shot.png)
+## FAQ
+### Can I add PR to this repository? 
+- Of course, if you want to implement some new component that doesn't exist or suggest a fix!
 
-# 后续
+### Which versions of Qt does it support?
+- I am focused on supporting the latest version of Qt 5.15 and subsequent versions of Qt6
 
-**再说吧！！！**
+> [!WARNING]
+> Earlier versions or beta versions are not supported! Qt5 support will be limited.
