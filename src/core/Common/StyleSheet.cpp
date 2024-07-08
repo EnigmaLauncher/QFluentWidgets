@@ -44,8 +44,7 @@ QString StyleSheetBase::getStyleSheet(const QString &file, Qfw::Theme theme)
     QFile f(file);
     QString qss;
     if (f.open(QIODevice::ReadOnly)) {
-        QTextCodec *codec = QTextCodec::codecForName("UTF8");
-        qss               = codec->toUnicode(f.readAll());
+        qss               = f.readAll();
         f.close();
     }
 
@@ -287,11 +286,12 @@ QColor ThemeColor::color() const
     QColor themeColor = QFWIns.themeColor();
 
     // transform color into hsv space
-    qreal h, s, v;
 #if QT_VERSION < QT_VERSION_CHECK(6, 0, 0)
+    qreal h, s, v;
     themeColor.getHsvF(&h, &s, &v);
 #else
-    themeColor.getHsvF(reinterpret_cast<float*>(&h), reinterpret_cast<float*>(&s), reinterpret_cast<float*>(&v));
+    float h, s, v;
+    themeColor.getHsvF(&h, &s, &v);
 #endif
 
     if (QFWIns.isDarkTheme()) {
