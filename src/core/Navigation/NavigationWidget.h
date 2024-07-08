@@ -2,7 +2,7 @@
 #define NAVIGATIONWIDGET_H
 
 #include <QWidget>
-#include "Common/Icon.h"
+#include "../Common/Icon.h"
 
 class NavigationWidget : public QWidget
 {
