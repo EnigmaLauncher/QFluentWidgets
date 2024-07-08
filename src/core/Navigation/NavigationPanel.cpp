@@ -49,6 +49,7 @@ void NavigationPanel::initWidget()
     returnButton->hide();
     returnButton->setDisabled(true);
 
+    scrollArea->setObjectName("scrollAreaNavigationPanel");
     scrollArea->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     scrollArea->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     scrollArea->setWidget(scrollWidget);
