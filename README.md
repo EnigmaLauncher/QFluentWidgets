@@ -4,6 +4,10 @@ Implementation of the Fluent UI component library, but for Qt C++
 
 - [*What Fluent UI?*](https://developer.microsoft.com/en-us/fluentui)
 
+> [!CAUTION]
+> Active work on rewriting the code, so please be careful when using this library!
+
+
 ## General
 Based on the repository [programClown/QFluentWidgets](https://github.com/programClown/QFluentWidgets) under the GPLv3 license.
 Current: `444f2fe980ac472449be20fe24a185d251942dc3`
